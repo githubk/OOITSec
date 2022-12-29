@@ -13,6 +13,7 @@ public class Point {
 		this.x=x;
 		this.y=y;
 	}
+
 	
 	public Point(int x, int y, boolean selected) {
 		this.x=x;
@@ -25,6 +26,13 @@ public class Point {
 		int dY = this.y - y;
 		double d = Math.sqrt(dX*dX + dY*dY);
 		return d;
+	}
+	
+	public boolean contains (int x, int y) {
+		return this.distance(x, y)<=2;			
+	}
+	
+
 	}
 	
 	@Override

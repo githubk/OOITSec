@@ -30,6 +30,13 @@ public class Rectangle {
 		return width * height;
 	}
 	
+	public boolean contains(int x,int y) {
+		return upperLeft.getX()<x && upperLeft.getX()+width>x && upperLeft.getY()<y && upperLeft.getY()+height >y;
+	}	
+		public boolean contains(Point p) {
+			return this.contains(p.getX(),p.getY());
+	}
+	
 	@Override
 	public String toString() {
 		return "Upper left point: " + upperLeft + ", width: " + width + ", height: " + height;
