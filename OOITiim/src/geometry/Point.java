@@ -1,9 +1,9 @@
 package geometry;
 
-public class Point {
+public class Point extends Shape {
 	private int x;
 	private int y;
-	private boolean selected;
+	
 
 	public Point() {
 		
@@ -33,7 +33,7 @@ public class Point {
 	}
 	
 
-	}
+	
 	
 	@Override
 	public String toString() {

@@ -1,11 +1,11 @@
 package geometry;
 
-public class Rectangle {
+public class Rectangle extends Shape {
 	
 	public Point upperLeft;
 	public int width;
 	public int height;
-	public boolean selected;
+	
 	
 	public Rectangle() {
 
@@ -71,13 +71,7 @@ public class Rectangle {
 	public void setHeight(int height) {
 		this.height = height;
 	}
-	public boolean isSelected() {
-		return selected;
-	}
-	public void setSelected(boolean selected) {
-		this.selected = selected;
-	}
-	
+
 	
 
 }

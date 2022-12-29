@@ -1,11 +1,10 @@
 package geometry;
 
-public class Circle {
+public class Circle extends Shape {
 	//Cao
 	
 	private Point center;
 	private int r;
-	private boolean selected;
 	
 	public Circle() {
 

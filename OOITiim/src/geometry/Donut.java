@@ -37,7 +37,9 @@ public class Donut extends Circle {
 	
 	
 	@Override
-	public boolean contains(Point p)
+	public boolean contains(Point p) {
+		return this.contains(p.getX(),p.getY());
+	}
 	
 	
 	

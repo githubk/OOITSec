@@ -1,9 +1,9 @@
 package geometry;
 
-public class Line {
+public class Line extends Shape {
 	private Point startPoint;
 	private Point endPoint;
-	private boolean selected;
+	
 	
 	public Line(){
 		
